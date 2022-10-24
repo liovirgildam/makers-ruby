@@ -1,5 +1,6 @@
 class Bank
-    def initialize
+    def initialize(io)
+        @io = io
         @balance = 0
         @movements = []
     end
@@ -12,16 +13,22 @@ class Bank
     def deposit(date, amount)
         @balance = @balance + amount
         @movements.unshift( 
-            { date: date, credit: amount, debit: "", balance: @balance }
+            { date: date, credit: sprintf('%.2f', amount), debit: "" , balance: sprintf('%.2f', @balance) }
         )
     end
 
     def withdraw(date, amount)
         @balance = @balance - amount
         @movements.unshift( 
-            { date: date, credit: "", debit: amount, balance: @balance }
+            { date: date, credit: "" , debit: sprintf('%.2f', amount), balance: sprintf('%.2f', @balance) }
         )
     end
 
-    
+    def statement
+        @io.puts "date || credit || debit || balance"
+        @movements.each do |movement|
+            @io.puts "#{movement[:date]} || #{movement[:credit]} || #{movement[:debit]} || #{movement[:balance]}"
+        end
+    end
+
 end
