@@ -43,8 +43,10 @@ RSpec.describe Bank do
     account.withdraw('24/11/2022', 500)
     expect(account.balance).to eq 2500
     expect { account.statement }.to output(
-      "date || credit || debit || balance\n" / "24/11/2022 ||  || 500.00 || 2500.00\n" /
-      "21/10/2022 || 2000.00 ||  || 3000.00\n" / "20/10/2022 || 1000.00 ||  || 1000.00\n"
+      "date || credit || debit || balance\n"\
+      "24/11/2022 ||  || 500.00 || 2500.00\n"\
+      "21/10/2022 || 2000.00 ||  || 3000.00\n"\
+      "20/10/2022 || 1000.00 ||  || 1000.00\n"
     ).to_stdout
   end
 end

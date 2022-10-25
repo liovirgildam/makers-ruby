@@ -26,6 +26,7 @@ class Bank
         debit: '',
         balance: format('%.2f', @balance) }
     )
+    return amount
   end
 
   # Method that allows user to withdraw money to its account
@@ -43,6 +44,7 @@ class Bank
         debit: format('%.2f', amount),
         balance: format('%.2f', @balance) }
     )
+    return amount
   end
 
   # Method that prints all user's account transactions from most recent to the oldest
