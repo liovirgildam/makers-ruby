@@ -34,10 +34,9 @@ class Bank
     # throws error if not enough funds in the account
     raise 'Non-Sufficient funds' if
     (@balance - amount).negative?
-
+    # updates balance to reflect withdraw
     @balance -= amount
 
-    # updates balance to reflect withdraw
     @transactions.unshift(
       { date: date,
         credit: '',
