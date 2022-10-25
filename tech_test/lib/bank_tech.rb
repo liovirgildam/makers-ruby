@@ -20,7 +20,7 @@ class Bank
     @transactions.unshift(
 
       # Adds an Hash to the array with transaction details
-      # sprintf - turns integer into a float with two decimal points then converts it into a string
+      # format - turns integer into a float with two decimal points then converts it into a string
       { date: date,
         credit: format('%.2f', amount),
         debit: '',
@@ -34,6 +34,7 @@ class Bank
     # throws error if not enough funds in the account
     raise 'Non-Sufficient funds' if
     (@balance - amount).negative?
+    
     # updates balance to reflect withdraw
     @balance -= amount
 
