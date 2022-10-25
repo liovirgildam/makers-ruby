@@ -26,7 +26,7 @@ class Bank
         debit: '',
         balance: format('%.2f', @balance) }
     )
-    return amount
+    "Date: #{date} - Credit: #{format('%.2f', amount)}"
   end
 
   # Method that allows user to withdraw money to its account
@@ -44,7 +44,7 @@ class Bank
         debit: format('%.2f', amount),
         balance: format('%.2f', @balance) }
     )
-    return amount
+    "Date: #{date} - Debit: -#{format('%.2f', amount)}"
   end
 
   # Method that prints all user's account transactions from most recent to the oldest
@@ -53,5 +53,6 @@ class Bank
     @transactions.each do |transaction|
       puts "#{transaction[:date]} || #{transaction[:credit]} || #{transaction[:debit]} || #{transaction[:balance]}"
     end
+    nil
   end
 end
