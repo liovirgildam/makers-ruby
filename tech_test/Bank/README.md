@@ -2,7 +2,7 @@
 
 ## Specifications 
 
-The goal of this tech test is to create a program that replicates a bank's account activities such has deposit money, withdraw and check statement using TDD approach.
+The goal of this tech test is to create a program that replicates a bank's account activities such as deposit money, withdraw and check statement using TDD approach.
 
 To achieve it, I used Ruby, RSpec for testing, Rubocop for analyse the code quality and SimpleCov to check the tests coverage.
 
