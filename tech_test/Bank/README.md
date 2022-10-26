@@ -10,8 +10,8 @@ To achieve it, I used Ruby, RSpec for testing, Rubocop for analyse the code qual
 
 * Clone or download this repository
 * cd to Bank
-* bundle install
-* rspec (to run the tests and coverage)
+* run 'bundle install'
+* run 'rspec' (to run the tests and coverage)
 
 ## Example of running app in irb
 
