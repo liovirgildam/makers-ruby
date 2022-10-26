@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/liovirgildamendonca/Documents/makers-ruby/tech_test/spec/bank_tech_spec.rb": {
+      "/Users/liovirgildamendonca/Documents/makers-ruby/tech_test/Bank/spec/bank_tech_spec.rb": {
         "lines": [
           1,
           null,
@@ -57,7 +57,7 @@
           null
         ]
       },
-      "/Users/liovirgildamendonca/Documents/makers-ruby/tech_test/lib/bank_tech.rb": {
+      "/Users/liovirgildamendonca/Documents/makers-ruby/tech_test/Bank/lib/bank_tech.rb": {
         "lines": [
           null,
           1,
@@ -119,6 +119,6 @@
         ]
       }
     },
-    "timestamp": 1666711997
+    "timestamp": 1666781353
   }
 }

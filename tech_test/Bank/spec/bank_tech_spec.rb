@@ -4,14 +4,14 @@ RSpec.describe Bank do
   it 'user makes an initial deposit of 1000 pounds to its bank account' do
     account = Bank.new
     account.deposit('20/10/2022', 1000)
-    expect(account.balance).to eq 1000.00
+    expect(account.balance).to eq 1000
   end
 
   it 'user makes two consecutives deposits of 1000 and 2000 to its bank account' do
     account = Bank.new
     account.deposit('20/10/2022', 1000)
     account.deposit('21/10/2022', 2000)
-    expect(account.balance).to eq 3000.00
+    expect(account.balance).to eq 3000
   end
 
   it 'user makes two consecutives deposits of 250.50 and 249.49' do
@@ -25,7 +25,7 @@ RSpec.describe Bank do
     account = Bank.new
     account.deposit('20/10/2022', 1000)
     account.withdraw('22/10/2022', 500)
-    expect(account.balance).to eq 500.00
+    expect(account.balance).to eq 500
   end
 
   context 'throws an error if user tries to withdraw an amount larger than account balance' do

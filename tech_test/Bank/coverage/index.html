@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Tech test</title>
+    <title>Code coverage for Bank</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.3/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.3/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-10-25T16:33:17+01:00">2022-10-25T16:33:17+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-10-26T11:49:13+01:00">2022-10-26T11:49:13+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -71,7 +71,7 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#54f9780d05ea7c3fd9ef92d26871d276540c071e" class="src_link" title="lib/bank_tech.rb">lib/bank_tech.rb</a></td>
+            <td class="strong t-file__name"><a href="#1333bca04be1b61c6d09f85f91fad8219ced0d1f" class="src_link" title="lib/bank_tech.rb">lib/bank_tech.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">57</td>
             <td class="cell--number">18</td>
@@ -82,7 +82,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#e700968cbf397d7d0450cff37422ca5033bd286c" class="src_link" title="spec/bank_tech_spec.rb">spec/bank_tech_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#e88090573cabc8738fa53baf7bef836dbf265b7d" class="src_link" title="spec/bank_tech_spec.rb">spec/bank_tech_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">52</td>
             <td class="cell--number">33</td>
@@ -109,7 +109,7 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="54f9780d05ea7c3fd9ef92d26871d276540c071e">
+        <div class="source_table" id="1333bca04be1b61c6d09f85f91fad8219ced0d1f">
   <div class="header">
     <h3>lib/bank_tech.rb</h3>
     <h4>
@@ -384,7 +384,7 @@
 
             
 
-            <code class="ruby">      # sprintf - turns integer into a float with two decimal points then converts it into a string</code>
+            <code class="ruby">      # format - turns integer into a float with two decimal points then converts it into a string</code>
           </li>
         </div>
       
@@ -637,7 +637,7 @@
 
             
 
-            <code class="ruby">    &quot;Date: #{date} - Debit: -#{format(&#39;%.2f&#39;, amount)}&quot;</code>
+            <code class="ruby">    &quot;Date: #{date} - Debit: #{format(&#39;%.2f&#39;, amount)}&quot;</code>
           </li>
         </div>
       
@@ -767,7 +767,7 @@
 </div>
 
       
-        <div class="source_table" id="e700968cbf397d7d0450cff37422ca5033bd286c">
+        <div class="source_table" id="e88090573cabc8738fa53baf7bef836dbf265b7d">
   <div class="header">
     <h3>spec/bank_tech_spec.rb</h3>
     <h4>
@@ -866,7 +866,7 @@
 
             
 
-            <code class="ruby">    expect(account.balance).to eq 1000.00</code>
+            <code class="ruby">    expect(account.balance).to eq 1000</code>
           </li>
         </div>
       
@@ -943,7 +943,7 @@
 
             
 
-            <code class="ruby">    expect(account.balance).to eq 3000.00</code>
+            <code class="ruby">    expect(account.balance).to eq 3000</code>
           </li>
         </div>
       
@@ -1097,7 +1097,7 @@
 
             
 
-            <code class="ruby">    expect(account.balance).to eq 500.00</code>
+            <code class="ruby">    expect(account.balance).to eq 500</code>
           </li>
         </div>
       
