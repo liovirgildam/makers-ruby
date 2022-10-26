@@ -8,10 +8,10 @@ To achieve it, I used Ruby, RSpec for testing, Rubocop for analyse the code qual
 
 ## Installation 
 
-*Clone or download this repository
-*cd to Bank
-*bundle install
-*rspec (to run the tests and coverage)
+* Clone or download this repository
+* cd to Bank
+* bundle install
+* rspec (to run the tests and coverage)
 
 ## Example of running app in irb
 
@@ -19,13 +19,10 @@ To achieve it, I used Ruby, RSpec for testing, Rubocop for analyse the code qual
 
 There are three methods:
 
-* deposit(date, amount) 
-- To add money to account accepts two parameters date in format (DD-MM-YYYY) and amount in integer or float number
+* deposit(date, amount) - To add money to account accepts two parameters date in format (DD-MM-YYYY) and amount in integer or float number
 
-* withdraw(date, amount) 
-- To take money of account
+* withdraw(date, amount) - To take money of account
 
-* statement 
-- To print all transactions
+* statement - To print all transactions
 
 <h1>Thank you</h1>
