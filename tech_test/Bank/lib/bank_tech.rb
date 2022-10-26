@@ -20,7 +20,7 @@ class Bank
     @transactions.unshift(
 
       # Adds an Hash to the array with transaction details
-      # sprintf - turns integer into a float with two decimal points then converts it into a string
+      # format - turns integer into a float with two decimal points then converts it into a string
       { date: date,
         credit: format('%.2f', amount),
         debit: '',
@@ -43,7 +43,7 @@ class Bank
         debit: format('%.2f', amount),
         balance: format('%.2f', @balance) }
     )
-    "Date: #{date} - Debit: -#{format('%.2f', amount)}"
+    "Date: #{date} - Debit: #{format('%.2f', amount)}"
   end
 
   # Method that prints all user's account transactions from most recent to the oldest
